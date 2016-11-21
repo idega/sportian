@@ -291,6 +291,23 @@
 			<groupId>com.idega.block.private</groupId>
 			<artifactId>com.idega.member.api</artifactId>
 		</dependency>
+		
+		<!-- 3rd parties -->
+		<dependency>
+			<groupId>org.apache.santuario</groupId>
+			<artifactId>xmlsec</artifactId>
+			<version>${xml-security-xmlsec-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.codehaus.woodstox</groupId>
+					<artifactId>stax2-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.codehaus.woodstox</groupId>
+					<artifactId>woodstox-core-asl</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 	<distributionManagement>
 		<repository>
