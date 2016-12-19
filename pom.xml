@@ -227,15 +227,19 @@
 			<groupId>com.idega.block.egov</groupId>
 			<artifactId>is.idega.block.nationalregister</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.idega.block.egov</groupId>
+			<artifactId>com.idega.company</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.idega.block.addon</groupId>
+					<artifactId>com.idega.bpm</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
     	<dependency>
 	      <groupId>com.idega.block.egov</groupId>
 	      <artifactId>is.idega.idegaweb.egov.course</artifactId>
-	      <exclusions>
-	      	<exclusion>
-	      		<artifactId>com.idega.company</artifactId>
-	      		<groupId>com.idega.block.egov</groupId>
-	      	</exclusion>
-	      </exclusions>
     	</dependency>
     	<dependency>
 			<groupId>com.idega.block.egov</groupId>
